@@ -14,6 +14,12 @@ public class Alumno {
         nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
+        if (nombre.length() < 3) {
+            System.out.println("Error: caracteres insuficientes en el nombre.");
+        }  
+        if (numeroMatricula.length() < 4) {
+            System.out.println("Error: caracteres insuficientes en el número de matrícula.");
+        }  
     }
 
     /**
