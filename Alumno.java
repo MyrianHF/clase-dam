@@ -52,6 +52,12 @@ public class Alumno {
         if (nombre.length() > 3 && numeroMatricula.length() > 4) {
             aDevolver = nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
         }
+        else if (nombre.length() < 3 && numeroMatricula.length() > 4) {
+            aDevolver = nombre + numeroMatricula.substring(0, 4);
+        }
+        else if (nombre.length() > 3 && numeroMatricula.length() < 4) {
+            aDevolver = nombre.substring(0, 3) + numeroMatricula;
+        }
         else {
             aDevolver = nombre + numeroMatricula;
         }
