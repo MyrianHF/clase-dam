@@ -72,4 +72,15 @@ public class ClaseDam {
         }
         System.out.println("Numero de alumnos: " + getNumeroDeAlumnos());
     }
+    
+    /**
+     * Fija el tutor de la clase
+     */
+    public void imprimirListaNumeradaDeAlumnos() {
+        int numeroLista = 0;
+        for (Alumno alumno : alumnos) {
+            numeroLista = numeroLista + 1;
+            System.out.println(numeroLista + ". " + alumno.getNombre() + " (" + alumno.getNumeroMatricula() + ")" + " - " + alumno.getEdad() + " años.");
+        }
+    }
 }
